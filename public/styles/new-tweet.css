@@ -1,0 +1,24 @@
+.new-tweet textarea {
+  border-top: 0px !important;
+  border-right: 0px !important;
+  border-bottom: solid #545149 2px !important;
+  border-left: 0px !important;
+  background-color: inherit;
+  width: 100%;
+  resize: none;
+}
+
+.new-tweet textarea::placeholder {
+  font-weight: 600;
+}
+
+.new-tweet .btn {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+}
+
+.new-tweet .counter {
+  float: right;
+  font-family: 'Bungee', cursive;
+}
