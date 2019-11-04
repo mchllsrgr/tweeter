@@ -7,7 +7,7 @@ header {
   background-image: url("../images/cubes.png");
 }
 
-header #avatar {
+#avatar {
   display: block;
   margin: 0 auto;
 }
