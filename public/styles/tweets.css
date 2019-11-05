@@ -5,6 +5,7 @@
 article.tweet {
   border: solid #545149 3px;
   padding: 10px;
+  height: 210px;
 }
 
 /* TWEET HEADER */
@@ -43,4 +44,14 @@ article.tweet p.tweet-text {
 article.tweet footer p {
   font-size: 13px;
   font-weight: 600;
+  position: relative;
+  left: 15px;
+  bottom: 10px;
+}
+
+article.tweet footer p.icons {
+  float: right;
+  position: relative;
+  bottom: 55px;
+  left: -20px;
 }
