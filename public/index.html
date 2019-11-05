@@ -42,6 +42,8 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+
+      <!-- Header profile -->
       <section class="new-tweet">
         <a class="anchor" id="compose"></a>
         <h2>Compose Tweet</h2>
@@ -52,18 +54,21 @@
         </form>
       </section>
 
-      <article class="tweet">
-        <header>
-          <img src="images/profile-hex.png">
-          <h3>Name</h3>
-          <a>@handle</a>
-        </header>
-        <p>This is the tweet</p>
-        <footer>
-          <p>Timestamp</p>
-          <p>Icons</p>
-        </footer>
-      </article>
+      <!-- Tweet feed -->
+      <section id="feed">
+        <article class="tweet">
+          <header>
+            <img src="images/profile-hex.png">
+            <h3>Newton</h3>
+            <a>@SirIsaac</a>
+          </header>
+          <p class="tweet-text">This is the tweet</p>
+          <footer>
+            <p>10 days ago</p>
+            <p>Icons</p>
+          </footer>
+        </article>
+      </section>
 
     </main>
   </body>
