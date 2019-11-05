@@ -1,4 +1,4 @@
-header {
+header.profile {
   height: 400px;
   width: 100%;
   position: relative;
@@ -12,6 +12,6 @@ header {
   margin: 0 auto;
 }
 
-header h2 {
+header.profile h2 {
   text-align: center;
 }
