@@ -1,0 +1,7 @@
+article.tweet img {
+  width: 90px;
+}
+
+article.tweet h3 {
+  display: inline;
+}

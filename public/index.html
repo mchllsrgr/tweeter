@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="styles/header.css" type="text/css" />
     <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
-    
+    <link rel="stylesheet" href="styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
@@ -30,7 +30,7 @@
       <span class="compose"><a href="#compose"><strong>Write</strong> a new tweet</a></span>
     </nav>
 
-    <header>
+    <header class="profile">
       <div>
         <img src="images/profile-hex.png" id="avatar">
       </div>
@@ -53,9 +53,16 @@
       </section>
 
       <article class="tweet">
-        <header>Header</header>
+        <header>
+          <img src="images/profile-hex.png">
+          <h3>Name</h3>
+          <a>@handle</a>
+        </header>
         <p>This is the tweet</p>
-        <footer>Footer</footer>
+        <footer>
+          <p>Timestamp</p>
+          <p>Icons</p>
+        </footer>
       </article>
 
     </main>
