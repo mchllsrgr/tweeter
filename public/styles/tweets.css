@@ -1,7 +1,26 @@
+#feed {
+  margin-top: 40px;
+}
+
+article.tweet {
+  border: solid #545149 3px;
+}
+
+article.tweet header {
+  height: 90px;
+}
+
 article.tweet img {
-  width: 90px;
+  height: 90px;
 }
 
 article.tweet h3 {
-  display: inline;
+  display: inline-block;
+  position: relative;
+  top: -34px;
+}
+
+article.tweet a {
+  float: right;
+  line-height: 90px;
 }
