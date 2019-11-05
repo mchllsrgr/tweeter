@@ -8,6 +8,13 @@ article.tweet {
   height: 210px;
 }
 
+article.tweet:hover {
+  box-shadow: 8px 8px #C5CBE3;
+}
+article.tweet:hover a.handle {
+  display: inline;
+}
+
 /* TWEET HEADER */
 article.tweet header {
   height: 60px;
@@ -25,7 +32,8 @@ article.tweet h3 {
   font-size: 24px;
 }
 
-article.tweet a {
+article.tweet a.handle {
+  display: none;
   float: right;
   line-height: 60px;
   font-size: 20px;
