@@ -8,6 +8,15 @@ nav {
   padding: 1.5em;
 }
 
-nav span {
+nav #logo {
   font-family: 'Bungee', cursive;
+}
+
+nav .compose {
+  float: right;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
 }

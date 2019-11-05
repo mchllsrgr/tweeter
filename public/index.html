@@ -25,7 +25,8 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span id="logo">tweeter</span>
+      <span class="compose"><a href="#compose"><strong>Write</strong> a new tweet</a></span>
     </nav>
 
     <header>
@@ -40,7 +41,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet" id="compose">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
             <textarea name="text" placeholder="What are you humming about?"></textarea>
