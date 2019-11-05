@@ -23,12 +23,6 @@ body {
 
 .container {
   width: 90%;
-  margin: 120px auto 0;
-}
-
-a.anchor {
-  display: block;
-  position: relative;
-  top: -120px;
-  visibility: hidden;
+  margin: 0 auto;
+  padding-top: 120px;
 }
