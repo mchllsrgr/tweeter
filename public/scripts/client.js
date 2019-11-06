@@ -56,8 +56,8 @@ $(document).ready(function() {
           method: 'POST',
           data: $(this).serialize()
         })
-        .then(loadTweets());
-        $text.val('').focus();
+        .then(loadTweets);
+        $text.val('');
       }
 
     });
