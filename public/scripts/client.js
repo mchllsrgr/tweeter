@@ -37,6 +37,17 @@ const loadTweets = function() {
   });
 };
 
+// check if tweet is valid (not empty, under max charac)
+const invalidTweet = function(input) {
+  let error = '';
+  if (input === '') {
+    error = 'Tweet cannot be empty';
+  } else if (input.length > 140) {
+    error = 'Your tweet is too long';
+  }
+  return error;
+}
+
 
 $(document).ready(function() {
   loadTweets();
