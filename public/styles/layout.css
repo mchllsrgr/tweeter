@@ -25,6 +25,9 @@ body {
   margin: 120px auto 0 auto;
 }
 
-/* :target {
-  padding-top: 120px;
-} */
+#compose {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: none;
+}
