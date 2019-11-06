@@ -29,6 +29,18 @@ const renderTweets = function(tweets) {
 
 $(document).ready(function() {
   renderTweets(data);
+
+  $(function() {
+    $('.new-tweet form').submit(function(event) {
+      event.preventDefault();
+      $.ajax({ 
+        url: '/tweets',
+        method: 'POST',
+        data: $(this).serialize()
+      });
+    });
+  });
+
 });
 
 
