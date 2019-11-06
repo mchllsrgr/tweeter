@@ -27,6 +27,11 @@ const renderTweets = function(tweets) {
   }
 }
 
+// fetch tweets from /tweets page
+const loadTweets = function() {
+  $.ajax('/tweets');
+};
+
 $(document).ready(function() {
   renderTweets(data);
 
