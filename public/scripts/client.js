@@ -37,19 +37,6 @@ const loadTweets = function() {
   });
 };
 
-// check if tweet is valid (not empty, under max charac)
-const invalidTweet = function(input) {
-  let error = '';
-  if (input === '') {
-    error = 'Tweet cannot be empty';
-  } else if (input.length > 140) {
-    error = 'Your tweet is too long';
-  } else {
-    return true;
-  }
-  return error;
-}
-
 
 $(document).ready(function() {
   loadTweets();
@@ -58,13 +45,21 @@ $(document).ready(function() {
     $('.new-tweet form').submit(function(event) {
       const $text = $('#new');
       event.preventDefault();
-      $.ajax({
-        url: '/tweets',
-        method: 'POST',
-        data: $(this).serialize()
-      })
-      .then(loadTweets());
-      $text.val('').focus();
+
+      if ($text.val() === '') {
+        alert('Tweet cannot be empty');
+      } else if ($text.val().length > 140) {
+        alert('Your tweet is too long');
+      } else {
+        $.ajax({
+          url: '/tweets',
+          method: 'POST',
+          data: $(this).serialize()
+        })
+        .then(loadTweets());
+        $text.val('').focus();
+      }
+
     });
   });
 
