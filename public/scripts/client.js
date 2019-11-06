@@ -43,12 +43,15 @@ $(document).ready(function() {
 
   $(function() {
     $('.new-tweet form').submit(function(event) {
+      const $text = $('#new');
       event.preventDefault();
       $.ajax({
         url: '/tweets',
         method: 'POST',
         data: $(this).serialize()
-      });
+      })
+      .then(loadTweets());
+      $text.val('').focus();
     });
   });
 
