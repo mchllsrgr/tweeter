@@ -12,7 +12,7 @@ const createTweetElement = function(tweet) {
     <p class="tweet-text">${tweet.content.text}</p>
     <footer>
       <p>${date}</p>
-      <p class="icons">Icons</p>
+      <p class="icons"><i class="fa fa-flag-o"></i> <i class="fa fa-retweet"></i> <i class="fa fa-heart-o"></i></p>
     </footer>
   </article>
   `;
@@ -44,6 +44,8 @@ const invalidTweet = function(input) {
     error = 'Tweet cannot be empty';
   } else if (input.length > 140) {
     error = 'Your tweet is too long';
+  } else {
+    return true;
   }
   return error;
 }
