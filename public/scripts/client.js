@@ -18,7 +18,8 @@ const createTweetElement = function(obj) {
 };
 
 $(document).ready(function() {
-  const newTweet = $('<article>').addClass('tweet');
+  const $tweet = createTweetElement(tweetData);
+  $('#feed').prepend($tweet);
 });
 
 // TEST CODE
@@ -33,8 +34,6 @@ const tweetData = {
       },
     "created_at": 1461116232227
  }
-
-const $tweet = createTweetElement(tweetData);
 
 // Test / driver code (temporary)
 console.log($tweet); 
