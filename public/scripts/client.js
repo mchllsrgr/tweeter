@@ -1,7 +1,7 @@
 // HELPER FUNCTIONS
 // put individual tweet in article element
 const createTweetElement = function(tweet) {
-  const date = jQuery.timeago(new Date(tweet.created_at * 1000));
+  const date = jQuery.timeago(new Date(tweet.created_at));
   const markup = `
   <article class="tweet">
     <header>
