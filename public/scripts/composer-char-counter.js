@@ -7,9 +7,10 @@ $(document).ready(function() {
 
     if (length < 0) {
       $(this).siblings('.counter').addClass('longTweet');
+    } else if (length > 0 && length <= 140) {
+      $(this).siblings('.counter').removeClass('longTweet');
     }
     
-
   });
 
 });
