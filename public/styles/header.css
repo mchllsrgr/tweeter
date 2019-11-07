@@ -1,8 +1,7 @@
 header.profile {
-  height: 400px;
+  height: 520px;
   width: 100%;
-  position: relative;
-  top: 120px;
+  padding-top: 120px;
   background-color: rgba(164, 143, 65, 0.7);
   background-image: url("../images/cubes.png");
 }

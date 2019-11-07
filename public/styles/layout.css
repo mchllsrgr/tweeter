@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 90%;
-  margin: 120px auto 0 auto;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -31,6 +31,9 @@ body {
   }
 
   header.profile {
+    height: 400px;
+    position: relative;
+    top: 120px;
     float: left;
     width: 25%;
     margin-left: 5%;
