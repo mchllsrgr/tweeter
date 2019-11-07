@@ -79,4 +79,15 @@ $(document).ready(function() {
     $('section.new-tweet textarea').focus();
   });
 
+  // header mobile - turn purple after scrolling past
+  // main.header should change background
+  $(document).scroll(function() {
+    let currentPosition = $(document).scrollTop();
+    if (currentPosition > 350) {
+      $('nav').css('background-color', '#4056A1' );
+    } else {
+      $('nav').css('background-color', 'transparent');
+    }
+  })
+
 });
