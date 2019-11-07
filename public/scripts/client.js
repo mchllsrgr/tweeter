@@ -2,21 +2,28 @@
 // put individual tweet in article element
 const createTweetElement = function(tweet) {
   const date = jQuery.timeago(new Date(tweet.created_at));
-  const markup = `
-  <article class="tweet">
-    <header>
-      <img src="${tweet.user.avatars}">
-      <h3>${tweet.user.name}</h3>
-      <a class="handle">${tweet.user.handle}</a>
-    </header>
-    <p class="tweet-text">${tweet.content.text}</p>
-    <footer>
-      <p>${date}</p>
-      <p class="icons"><i class="fa fa-flag-o"></i> <i class="fa fa-retweet"></i> <i class="fa fa-heart-o"></i></p>
-    </footer>
-  </article>
-  `;
-  return markup;
+
+  const $header =
+  $('<header>')
+  .append($('<img>').attr('src', `${tweet.user.avatars}`))
+  .append($('<h3>').text(`${tweet.user.name}`))
+  .append($('<a>').addClass('handle').text(`${tweet.user.handle}`));
+
+  const $text =
+  $('<p>').addClass('tweet-text').text(`${tweet.content.text}`);
+
+  const $footer =
+  $('<footer>')
+  .append($('<p>').text(`${date}`))
+  .append('<p class="icons"><i class="fa fa-flag-o"></i> <i class="fa fa-retweet"></i> <i class="fa fa-heart-o"></i></p>');
+
+  const $tweet =
+  $('<article>').addClass('tweet')
+  .append($header)
+  .append($text)
+  .append($footer);
+
+  return $tweet;
 };
 
 // loop through array to render tweets
