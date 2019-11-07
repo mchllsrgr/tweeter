@@ -74,6 +74,7 @@ $(document).ready(function() {
   $('#compose').click(function() {
     console.log('clicked')
     $('section.new-tweet').slideToggle('show');
+    $('section.new-tweet textarea').focus();
   });
 
 
