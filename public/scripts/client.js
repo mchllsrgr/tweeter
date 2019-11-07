@@ -94,7 +94,7 @@ $(document).ready(function() {
     $('section.new-tweet textarea').focus();
   });
 
-  // nav mobile - detect on scroll and on resize
+  // nav - detect on scroll and on resize
   $(document).scroll(function() {
     changeNav();
   });
