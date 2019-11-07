@@ -15,9 +15,10 @@ nav #logo {
 nav .compose {
   position: absolute;
   right: 1.5em;
+  top: 1.5em;
 }
 
-nav a {
-  color: #FFFFFF;
-  text-decoration: none;
+#compose {
+  display: block;
+  text-align: center;
 }
