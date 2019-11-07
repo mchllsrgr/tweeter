@@ -47,6 +47,7 @@ const loadTweets = function() {
 
 $(document).ready(function() {
   loadTweets();
+  $('.error').slideUp();
 
   // composing a new tweet
   $(function() {
@@ -55,14 +56,11 @@ $(document).ready(function() {
       event.preventDefault();
 
       if ($text.val() === '') {
-        $('.error').removeClass('error').addClass('show')
-        .append($('<i>').addClass('fa fa-exclamation-triangle'))
-        .append($('<p>').text('Tweet cannot be empty'))
+        $('#empty').slideDown();
       } else if ($text.val().length > 140) {
-        $('.error').removeClass('error').addClass('show')
-        .append($('<i>').addClass('fa fa-exclamation-triangle'))
-        .append($('<p>').text('Tweet is over max. characters'))
+        $('#long').slideDown();
       } else {
+        $('.error').slideUp();
         $.ajax({
           url: '/tweets',
           method: 'POST',
@@ -80,6 +78,5 @@ $(document).ready(function() {
     $('section.new-tweet').slideToggle('show');
     $('section.new-tweet textarea').focus();
   });
-
 
 });
