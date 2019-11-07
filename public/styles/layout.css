@@ -24,3 +24,24 @@ body {
   width: 90%;
   margin: 120px auto 0 auto;
 }
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;;
+  }
+
+  header.profile {
+    float: left;
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-top: 15px;
+  }
+
+  .container {
+    float: right;
+    width: 55%;
+    margin-right: 5%;
+    margin-top: 12%;
+  }
+}
