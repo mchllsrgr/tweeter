@@ -45,7 +45,7 @@ const loadTweets = function() {
 };
 
 
-// nav mobile - turn purple after scrolling past point
+// nav mobile - bg turns purple after scrolling past certain point
 const changeNav = function() {
   let currentPosition = $(document).scrollTop();
   if ($(window).width() < 1024) {
