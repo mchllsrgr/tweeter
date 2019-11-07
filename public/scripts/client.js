@@ -45,7 +45,23 @@ const loadTweets = function() {
 };
 
 
+// nav mobile - turn purple after scrolling past point
+const changeNav = function() {
+  let currentPosition = $(document).scrollTop();
+  if ($(window).width() < 1024) {
+    if (currentPosition > 350) {
+      $('nav').css('background-color', '#4056A1');
+    } else {
+      $('nav').css('background-color', 'transparent');
+    }
+  } else {
+    $('nav').css('background-color', '#4056A1');
+  }
+};
+
+
 $(document).ready(function() {
+  changeNav();
   loadTweets();
   $('.error').slideUp();
 
@@ -74,20 +90,17 @@ $(document).ready(function() {
 
   // toggle nav - compose
   $('#compose').click(function() {
-    console.log('clicked')
     $('section.new-tweet').slideToggle('show');
     $('section.new-tweet textarea').focus();
   });
 
-  // header mobile - turn purple after scrolling past
-  // main.header should change background
+  // nav mobile - detect on scroll and on resize
   $(document).scroll(function() {
-    let currentPosition = $(document).scrollTop();
-    if (currentPosition > 350) {
-      $('nav').css('background-color', '#4056A1' );
-    } else {
-      $('nav').css('background-color', 'transparent');
-    }
-  })
+    changeNav();
+  });
+
+  $(window).resize(function() {
+    changeNav();
+  });
 
 });
