@@ -32,18 +32,21 @@
   color: #DC143C;
 }
 
-.show {
-  display: block;
+.error {
+  display: none;
 }
 
-#error {
-  display: none;
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid red;
   margin-bottom: 15px;
   height: 45px;
+  color: red;
 }
 
-#error p {
+.show p {
   margin: 0;
   text-align: center;
 }

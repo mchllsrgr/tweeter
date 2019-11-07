@@ -55,9 +55,13 @@ $(document).ready(function() {
       event.preventDefault();
 
       if ($text.val() === '') {
-        alert('Tweet cannot be empty');
+        $('.error').removeClass('error').addClass('show')
+        .append($('<i>').addClass('fa fa-exclamation-triangle'))
+        .append($('<p>').text('Tweet cannot be empty'))
       } else if ($text.val().length > 140) {
-        alert('Your tweet is too long');
+        $('.error').removeClass('error').addClass('show')
+        .append($('<i>').addClass('fa fa-exclamation-triangle'))
+        .append($('<p>').text('Tweet is over max. characters'))
       } else {
         $.ajax({
           url: '/tweets',
