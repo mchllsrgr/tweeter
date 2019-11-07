@@ -73,7 +73,7 @@ $(document).ready(function() {
   // toggle nav - compose
   $('#compose').click(function() {
     console.log('clicked')
-    $('section.new-tweet').toggleClass('hide');
+    $('section.new-tweet').slideToggle('show');
   });
 
 
