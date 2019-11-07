@@ -56,8 +56,10 @@ $(document).ready(function() {
       event.preventDefault();
 
       if ($text.val() === '') {
+        $('.error').slideUp();
         $('#empty').slideDown();
       } else if ($text.val().length > 140) {
+        $('.error').slideUp();
         $('#long').slideDown();
       } else {
         $('.error').slideUp();
