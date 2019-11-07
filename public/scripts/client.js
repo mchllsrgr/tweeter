@@ -54,15 +54,13 @@ $(document).ready(function() {
     $('.new-tweet form').submit(function(event) {
       const $text = $('#new');
       event.preventDefault();
+      $('.error').slideUp();
 
       if ($text.val() === '') {
-        $('.error').slideUp();
         $('#empty').slideDown();
       } else if ($text.val().length > 140) {
-        $('.error').slideUp();
         $('#long').slideDown();
       } else {
-        $('.error').slideUp();
         $.ajax({
           url: '/tweets',
           method: 'POST',
