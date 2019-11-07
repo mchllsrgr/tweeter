@@ -1,4 +1,7 @@
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
   height: 120px;
   width: 100%;
@@ -10,12 +13,6 @@ nav {
 
 nav #logo {
   font-family: 'Bungee', cursive;
-}
-
-nav .compose {
-  position: absolute;
-  right: 1.5em;
-  top: 1.5em;
 }
 
 #compose {
