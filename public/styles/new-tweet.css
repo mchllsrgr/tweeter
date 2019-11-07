@@ -35,3 +35,15 @@
 .show {
   display: block;
 }
+
+#error {
+  display: none;
+  border: 3px solid red;
+  margin-bottom: 15px;
+  height: 45px;
+}
+
+#error p {
+  margin: 0;
+  text-align: center;
+}
