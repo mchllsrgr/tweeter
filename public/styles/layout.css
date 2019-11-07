@@ -24,10 +24,3 @@ body {
   width: 90%;
   margin: 120px auto 0 auto;
 }
-
-#compose {
-  display: block;
-  position: relative;
-  top: -120px;
-  visibility: none;
-}

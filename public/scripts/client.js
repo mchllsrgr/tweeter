@@ -48,6 +48,7 @@ const loadTweets = function() {
 $(document).ready(function() {
   loadTweets();
 
+  // composing a new tweet
   $(function() {
     $('.new-tweet form').submit(function(event) {
       const $text = $('#new');
@@ -66,8 +67,14 @@ $(document).ready(function() {
         .then(loadTweets);
         $text.val('');
       }
-
     });
   });
+
+  // toggle nav - compose
+  $('#compose').click(function() {
+    console.log('clicked')
+    $('section.new-tweet').toggleClass('hide');
+  });
+
 
 });

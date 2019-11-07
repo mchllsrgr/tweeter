@@ -30,7 +30,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span id="logo">tweeter</span>
-      <span class="compose"><a href="#compose"><strong>Write</strong> a new tweet</a></span>
+      <span class="compose" id="compose"><strong>Write</strong> a new tweet</span>
     </nav>
 
     <!-- Header profile -->
@@ -48,7 +48,6 @@
     <main class="container">
 
       <!-- Write new tweet -->
-      <a id="compose"></a>
       <section class="new-tweet">
         <form method="POST" action="/tweets">
             <textarea name="text" id="new" placeholder="What are you humming about?"></textarea>

@@ -13,7 +13,12 @@ nav #logo {
 }
 
 nav .compose {
-  float: right;
+  position: absolute;
+  right: 1.5em;
+}
+
+.hide {
+  display: none;
 }
 
 nav a {
