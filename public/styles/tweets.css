@@ -43,6 +43,7 @@ article.tweet footer p {
   justify-content: space-between;
 }
 article.tweet footer .icons {
+  visibility: hidden;
   float: right;
   position: relative;
   bottom: 55px;
@@ -54,6 +55,9 @@ article.tweet:hover {
 }
 article.tweet:hover a.handle {
   display: inline;
+}
+article.tweet:hover .icons {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=tweets.css.map */

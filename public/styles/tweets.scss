@@ -49,6 +49,7 @@ article.tweet {
       justify-content: space-between;
     }
     .icons {
+      visibility: hidden;
       float: right;
       position: relative;
       bottom: 55px;
@@ -61,5 +62,8 @@ article.tweet:hover {
   box-shadow: 8px 8px #C5CBE3;
   a.handle {
     display: inline;
+  }
+  .icons {
+    visibility: visible;
   }
 }
