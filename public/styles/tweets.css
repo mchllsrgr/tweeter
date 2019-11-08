@@ -7,23 +7,12 @@ article.tweet {
   padding: 10px;
   margin-bottom: 20px;
 }
-
-article.tweet:hover {
-  box-shadow: 8px 8px #C5CBE3;
-}
-article.tweet:hover a.handle {
-  display: inline;
-}
-
-/* TWEET HEADER */
 article.tweet header {
   height: 60px;
 }
-
 article.tweet img {
   height: 60px;
 }
-
 article.tweet h3 {
   display: inline-block;
   position: relative;
@@ -32,7 +21,6 @@ article.tweet h3 {
   font-weight: 100;
   font-size: 24px;
 }
-
 article.tweet a.handle {
   display: none;
   float: right;
@@ -42,15 +30,11 @@ article.tweet a.handle {
   padding-right: 15px;
   color: #C5CBE3;
 }
-
-/* TWEET TEXT */
 article.tweet p.tweet-text {
   padding: 0 0 25px 10px;
   border-bottom: solid #545149 3px;
   overflow-wrap: break-word;
 }
-
-/* TWEET FOOTER */
 article.tweet footer p {
   font-size: 13px;
   font-weight: 600;
@@ -58,10 +42,18 @@ article.tweet footer p {
   flex-direction: row;
   justify-content: space-between;
 }
-
-article.tweet footer p.icons {
+article.tweet footer .icons {
   float: right;
   position: relative;
   bottom: 55px;
   left: -20px;
 }
+
+article.tweet:hover {
+  box-shadow: 8px 8px #C5CBE3;
+}
+article.tweet:hover a.handle {
+  display: inline;
+}
+
+/*# sourceMappingURL=tweets.css.map */
