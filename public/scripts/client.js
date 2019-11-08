@@ -45,7 +45,7 @@ const loadTweets = function() {
 };
 
 
-// nav mobile - bg turns purple after scrolling past certain point
+// nav bg color (mobile) - turns solid color after scrolling past certain point
 const changeNav = function() {
   let currentPosition = $(document).scrollTop();
   if ($(window).width() < 1024) {
@@ -88,13 +88,13 @@ $(document).ready(function() {
     });
   });
 
-  // toggle nav - compose
+  // nav toggle - compose
   $('#compose').click(function() {
     $('section.new-tweet').slideToggle('show');
     $('section.new-tweet textarea').focus();
   });
 
-  // nav - detect on scroll and on resize
+  // nav bg color - detect on scroll and on resize
   $(document).scroll(function() {
     changeNav();
   });
